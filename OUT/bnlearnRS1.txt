@@ -1,0 +1,20 @@
+x
+OUT/Compare_result.txt
+x
+OUT/Compare_result.txt
+x
+OUT/Compare_result.txt
+x
+OUT/Compare_result.txt
+x
+OUT/Compare_result.txt
+x
+OUT/Compare_result.txt
+gs	hc	iamb	mmpc	rsmax	tabu	fastiamb	interiamb	mmhc
+6	18	9	11	6	18	12	12	9
+3	14	8	7	3	14	11	11	5
+x
+IN/Alarm1_s500_v1.txt
+gs	hc	iamb	mmpc	rsmax	tabu	fastiamb	interiamb	mmhc
+6	18	9	11	6	18	12	12	9
+3	14	8	7	3	14	11	11	5
