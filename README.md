@@ -1,5 +1,5 @@
 **This** is the source code of experiment of the **Research On Gene Regulatory Relationships Mining Based On Three-Phase Dependency Analysis Algorithm**,here is the description about **project structure**.<br/>
-All files and folders are in the same directory,
+All files and folders are in the same directory.
 ## files including:
   <pre>
     main.R
