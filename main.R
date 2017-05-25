@@ -6,7 +6,6 @@
 
 # install.packages('Rgraphviz', dependencies = TRUE) 
 # install.packages('graph',depend=TRUE) 
-# install.packages('arules', depend=TRUE)
 # install.packages('bnlearn', depend=TRUE)
 # install.packages('igraph', depend=TRUE)
 # install.packages('BiocGenerics', depend=TRUE)
@@ -14,21 +13,12 @@
  
 
 ## Set the current working directory.
-
 setwd(getwd())
 TEST_DATA <- "IN/Alarm1_s500_v1.txt"
 COMP_DATA <- "IN/Alarm1_graph.txt"
 
-## Step.1 
-## In this step, we completed the following works:
-## > sampling from source data,
-## > pretreatment for the aprori, 
-## > get association rules,
-## > re-process the results.
-source("Get_Rules.R")
 
-
-## Step.2
+## Step.1
 ## Implementation of TPDA algorithm, the algorithm input in two cases:
 ## > One is the result of direct sampling of source data.
 ## > The other is the result sorted by the association rule after sampling.
@@ -36,12 +26,12 @@ source("Get_Rules.R")
 source("TPDA_Function.R")
 
 
-## Step.3
+## Step.2
 ## Use nine algorithms to get the results.
+source("Cmp_Algorithms.R")
 
 
-
-## Step.4[1]
+## Step.3[1]
 ## Call the function :TPDA_Algorithm
 ## For the specified experimental data, 
 ## here we use different threshold, dispersion, discrete method to get a set of experimental results of TPDA.
@@ -49,12 +39,11 @@ source("TPDA_Function.R")
 TPDA_Algorithm(0.04,0.06,0.06,TEST_DATA,COMP_DATA)
 
 
-## Step.4[2]
+## Step.3[2]
 ## Call the function :NineAlgorithmTest.
 ## The nine algorithms are used to experiment with the data, 
 ## including gs,hc,iamb,mmpc,rsmax2,tabu,fastiamb,interiamb,mmhc.
 ## The result is stored in : OUT/CmpResult.txt by default.
-source("Cmp_Algorithms.R")
 CompareAlgorithm(TEST_DATA,COMP_DATA,'interval',5,"OUT/CmpResult.txt")
 
 
