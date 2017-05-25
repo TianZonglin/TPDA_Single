@@ -1,4 +1,4 @@
-## Step.2
+## Step.1
 ## Implementation of TPDA algorithm, the algorithm input in two cases:
 ## > One is the result of direct sampling of source data.
 ## > The other is the result sorted by the association rule after sampling.
