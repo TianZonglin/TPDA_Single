@@ -5,7 +5,6 @@ All files and folders are in the same directory.
     main.R
     Cmp_Algorithms.R
     Get_Rules.R
-    SortbyRules.R
     TPDA_Function.R
     furTreatment.java
     preTreatment.java</pre>
