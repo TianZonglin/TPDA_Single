@@ -29,15 +29,6 @@ source("Get_Rules.R")
 
 
 ## Step.2
-## To confirm whether the source data need to sort by the association rules, 
-## if not, skip to the third step.
-Sort1_Or_NotSort2 <- TRUE
-if(Sort1_Or_NotSort2){
-    source("SortbyRules.R")
-}
-
-
-## Step.3
 ## Implementation of TPDA algorithm, the algorithm input in two cases:
 ## > One is the result of direct sampling of source data.
 ## > The other is the result sorted by the association rule after sampling.
@@ -45,12 +36,12 @@ if(Sort1_Or_NotSort2){
 source("TPDA_Function.R")
 
 
-## Step.4
+## Step.3
 ## Use nine algorithms to get the results.
 
 
 
-## Step.5[1]
+## Step.4[1]
 ## Call the function :TPDA_Algorithm
 ## For the specified experimental data, 
 ## here we use different threshold, dispersion, discrete method to get a set of experimental results of TPDA.
@@ -58,7 +49,7 @@ source("TPDA_Function.R")
 TPDA_Algorithm(0.04,0.06,0.06,TEST_DATA,COMP_DATA)
 
 
-## Step.5[2]
+## Step.4[2]
 ## Call the function :NineAlgorithmTest.
 ## The nine algorithms are used to experiment with the data, 
 ## including gs,hc,iamb,mmpc,rsmax2,tabu,fastiamb,interiamb,mmhc.
