@@ -1,5 +1,5 @@
 
-## Step.2
+## Step.3
 ## Use nine algorithms to get the results.
 ## The nine algorithms are used to experiment with the data, 
 ## including gs,hc,iamb,mmpc,rsmax2,tabu,fastiamb,interiamb,mmhc.
