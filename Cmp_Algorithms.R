@@ -1,5 +1,5 @@
 
-## Step.4
+## Step.2
 ## Use nine algorithms to get the results.
 ## The nine algorithms are used to experiment with the data, 
 ## including gs,hc,iamb,mmpc,rsmax2,tabu,fastiamb,interiamb,mmhc.
@@ -25,7 +25,7 @@ CompareAlgorithm <- function(sourcee,cmpdata,methodd,dimsize,outfile){
     mydata <- t
     
     ## discretize.
-    mydata <- discretize(mydata,method = 'interval',breaks = 7) #ÀëÉ¢»¯
+    mydata <- discretize(mydata,method = 'interval',breaks = 7) #Ã€Ã«Ã‰Â¢Â»Â¯
     
     rownames(Alarm1_graph) <- colnames(Alarm1_graph)
     Alarm1_graph <- data.frame(t(Alarm1_graph))
